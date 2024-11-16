@@ -6,7 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
 	cors: {
-		origin: "http://localhost:3000",
+		origin: "https://p2p-file-sender.vercel.app/",
 		methods: ["GET", "POST"],
 	},
 });

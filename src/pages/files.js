@@ -13,7 +13,7 @@ export default function FileSharing() {
 	const dataChannelRef = useRef(null);
 
 	useEffect(() => {
-		socket = io("http://localhost:3001");
+		socket = io("https://4f88-2409-40c4-f-bf1-1d03-46c5-7f90-9148.ngrok-free.app/");
 
 		socket.on("connect", () => {
 			console.log(`Connected to signaling server as ${socket.id}`);
